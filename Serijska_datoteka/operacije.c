@@ -118,7 +118,7 @@ void dodajSlog(FILE *fajl, SLOG *slog){
             fseek(fajl, -sizeof(BLOK), SEEK_CUR);
             fwrite(&blok, sizeof(BLOK), 1, fajl);
             BLOK noviBlok;
-            strcpy(noviBlok.slogovi[i].evidBroj, OZNAKA_KRAJA_DATOTEKE);
+            strcpy(noviBlok.slogovi[0].evidBroj, OZNAKA_KRAJA_DATOTEKE);
             fwrite(&noviBlok, sizeof(BLOK), 1, fajl);
         }
     }
@@ -212,3 +212,4 @@ void logickoBrisanjeSloga(FILE *fajl, char *evidBroj){
         }
     }
 }
+
