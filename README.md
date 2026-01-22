@@ -1,2 +1,2 @@
-# UBP_OrganizacijaPodataka
+# UBPOrganizacijaPodataka
 Rad sa serijskom, sekvencijalnom i rasutom datotekom.
